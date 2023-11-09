@@ -1,0 +1,16 @@
+Public Class LoginForm
+    Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
+        Dim username As String = UsernameTextBox.Text
+        Dim password As String = PasswordTextBox.Text
+
+        ' You would typically send a request to your Flask app here for authentication.
+        ' This could be done using HTTP libraries like HttpClient.
+
+        ' For simplicity, let's assume successful login:
+        If username = "user" And password = "password" Then
+            MessageBox.Show("Login Successful")
+        Else
+            MessageBox.Show("Login Failed")
+        End If
+    End Sub
+End Class
